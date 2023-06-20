@@ -445,7 +445,7 @@ pub struct Reader {
 }
 
 /// Reader to be used for the derived image.
-pub struct ReaderDerived(Reader);
+pub struct ReaderDerived(pub Reader);
 impl ReaderDerived {
     /// Create a derived reader, initialising this image as the derived image, which is read from.
     ///
